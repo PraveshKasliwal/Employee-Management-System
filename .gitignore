@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+/dist
+/build
+/.vite
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment variables
+# Do not commit .env files containing sensitive credentials
+.env
+.env.local
+.env.*.local
+
+# IDE / Editor directories
+.vscode/
+.idea/
+
+# OS-specific files
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Optional
+/coverage
+/.temp
