@@ -67,7 +67,7 @@ const App = () => {
     const confirmDelete = window.confirm(`Are you sure you want to delete?`);
     if (!confirmDelete) return;
     try {
-      await axios.delete(`http://localhost:8000/api/employees/${id}`);
+      await axios.delete(`${API_URL}/${id}`);
       setEmployees((prev) => prev.filter((emp) => emp._id !== id));
     } catch (error) {
       console.error("Error deleting employee:", error);
